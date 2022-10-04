@@ -1,0 +1,81 @@
+body{
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+h1{
+    margin-top: 0px;
+    font-family: 'Acetone';
+    color: rgb(255, 255, 255);
+}
+
+h2{
+    font-family: 'Acetone';
+    color: rgb(0, 0, 0);
+}
+
+.header{
+    padding-top: 150px;
+    height: 180px;
+    text-align: center;
+    background-image: url('header-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+
+hr{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 5px;
+    background-color: grey;
+    border-radius: 4px;
+    border-width: 0px;
+}
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 25px auto;
+    padding: 10px;
+    background-color: #e2e2e2;
+    border-radius: 16px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+    border-radius: 16px;
+}
+.mytabs label {
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: #fff;
+    order: 1;
+    display: none;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
